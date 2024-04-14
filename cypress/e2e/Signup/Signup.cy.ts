@@ -15,4 +15,12 @@ describe('Realizar testes automatizados validando:entradas válidas e inválidas
     it('Realiza a validação na tela de Cadastro: Labels', () =>{
         validate.labels()
     })
+
+    it('Realiza a validação na tela de Cadastro: Placeholders', () => {
+        validate.placeholder()
+    });
+
+    it('Realiza a validação na tela de Cadastro: Head Icon Rodapé ', () => {
+        validate.icon()
+    });
 });
