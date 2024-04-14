@@ -6,7 +6,8 @@ export default defineConfig({
       // implement node event listeners here
     },
     baseUrl: 'https://qastage.buildbox.one/18/cadastro',
-    viewportHeight: 1336,
-    viewportWidth: 768
+    viewportWidth: 1336,
+    viewportHeight: 768
+    
   },
 });
