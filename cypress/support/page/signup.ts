@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import { MAPPED_FIELDS, LABELS } from "./elements";
+import { MAPPED_FIELDS, LABELS, INPUTS, CHECKBOX_AND_BUTTONS ,ICON } from "./elements";
 
 class validate  {
     personal_data(){
@@ -10,15 +10,35 @@ class validate  {
     }
 
     labels(){
-        cy.get(LABELS.name).contains('Nome')
+        cy.get(LABELS.first_name).contains('Nome')
         cy.get(LABELS.last_name).contains('Sobrenome')
-        cy.get(LABELS.date_of_birth).contains('Data de nascimento')
-        cy.get(LABELS.itin_number).contains('CPF')
+        cy.get(LABELS.birthDate).contains('Data de nascimento')
+        cy.get(LABELS.cpf).contains('CPF')
         cy.get(LABELS.email).contains('E-mail')
-        cy.get(LABELS.confirm_your_email).contains('Confirme seu E-mail')
+        cy.get(LABELS.confirm_email).contains('Confirme seu E-mail')
         cy.get(LABELS.password).contains('Insira sua senha')
-        cy.get(LABELS.confirm_your_password).contains('Confirme sua senha')
+        cy.get(LABELS.confirm_password).contains('Confirme sua senha')
         cy.get(LABELS.proficiency_level).contains('Nível de proficiência na língua inglesa')
+    }
+
+    placeholder (){
+        cy.get(INPUTS.input_first_name).should('have.attr', 'placeholder', 'Digite aqui o seu nome') 
+        cy.get(INPUTS.input_last_name).should('have.attr', 'placeholder', 'Digite aqui o seu sobrenome')
+        cy.get(INPUTS.input_birthDate).should('have.attr', 'placeholder', 'DD / MM / AAAA')
+        cy.get(INPUTS.input_cpf).should('have.attr', 'placeholder', 'Insira seu CPF aqui')
+        cy.get(INPUTS.input_email).should('have.attr', 'placeholder', 'Insira um e-mail válido')
+        cy.get(INPUTS.input_confirm_email).should('have.attr', 'placeholder', 'Insira um e-mail válido')
+    }
+
+    checkbox_and_buttons (){
+        cy.get(CHECKBOX_AND_BUTTONS.checkbox_terms_lgpd).should('be.visible') // Checkbox está sem ação. Portanto, não fiz essa validação.
+        cy.get(CHECKBOX_AND_BUTTONS.fazer_nivelamento_button).should('be.visible')
+        cy.get(CHECKBOX_AND_BUTTONS.proximo_button).should('be.visible')
+
+    }   
+
+    icon (){
+        cy.get(ICON.head_icon_rodape).should('be.visible')
     }
 }
 
