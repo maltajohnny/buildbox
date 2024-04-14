@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check if push is from dev to master
-        if: github.ref == 'refs/heads/dev' && github.event_name == 'push' && contains(github.event.ref, 'refs/heads/master')
-        run: echo "Push is from dev to master, continuing..."
+      - name: Check if push is from dev to main
+        if: github.ref == 'refs/heads/dev' && github.event_name == 'push' && contains(github.event.ref, 'refs/heads/main')
+        run: echo "Push is from dev to main, continuing..."
 
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
