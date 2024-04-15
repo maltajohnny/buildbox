@@ -22,20 +22,44 @@ const INPUTS = {
     input_birthDate: '[data-cy="input-signup-personal-data-birthDate"]',
     input_cpf: '[data-cy="input-signup-personal-data-cpf"]',
     input_email: '[data-cy="input-signup-personal-data-email"]',
-    input_confirm_email: '[data-cy="input-signup-personal-data-email"]',
+    input_confirm_email: '[data-cy="input-signup-personal-data-email-confirm"]',
     input_password: '[data-cy="input-signup-personal-data-password"]',
-    input_confirm_password: '.gap-y-4 > :nth-child(4) > :nth-child(2) > .form-container > .form-label',
-    input_proficiency_level: '.form-container > .form-label'
-
+    input_confirm_password: '[data-cy="input-signup-personal-data-password-confirm"]',
+    input_proficiency_level: '.form-container > .form-label',
+    input_error: '.input-error',
+    input_address_cep:'[data-cy="input-signup-address-cep"]',
+    input_address_country: '[data-cy="input-signup-address-country”]',
+    input_address_state: '[data-cy="input-signup-address-state”]',
+    input_address_city: '[data-cy="input-signup-address-city]',
+    input_address_neighborhood: '[data-cy="input-signup-address-neighborhood]',
+    input_address_street: '[data-cy="input-signup-address-street]',
+    input_address_number: '[data-cy="input-signup-address-number', //
+    input_address_complement: '[data-cy="input-signup-address-complement"]'
 }
 
 const CHECKBOX_AND_BUTTONS = {
     checkbox_terms_lgpd: '[data-cy="input-signup-personal-data-lgpd"]',
-    fazer_nivelamento_button: '.lg\:items-end > .btn',
-    proximo_button: '[data-cy="button-signup_submit_button_1"'
+    fazer_nivelamento_button: '.btn', 
+    proximo_button: '[data-cy="button-signup_submit_button_1"',
+    submit_form_button: '[data-cy="button-signup_submit_button_3"]',
+    login_page_redirect_button: '[data-cy="button-wide_window_button"]',
+    login_button: '#wp-submit'
+}
+
+const LOGIN_FORM = {
+    username: '#user_login',
+    password: '#user_pass'
+
+}
+
+const DASHBOARD ={
+    username_label: '.hidden > .flex > .text-sm'
 }
 
 const ICON = {
      head_icon_rodape:'.h-7'
 }
-export { MAPPED_FIELDS, LABELS, INPUTS, CHECKBOX_AND_BUTTONS ,ICON}
+
+
+
+export { MAPPED_FIELDS, LABELS, INPUTS, CHECKBOX_AND_BUTTONS , LOGIN_FORM, DASHBOARD, ICON}
