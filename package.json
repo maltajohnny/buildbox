@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/maltajohnny/buildbox#readme",
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "@types/node": "^20.12.7",
     "cypress": "^13.7.3",
+    "cypress-plugin-tab": "^1.0.5",
     "typescript": "^5.4.5"
   }
 }
