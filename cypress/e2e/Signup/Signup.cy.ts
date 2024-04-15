@@ -6,10 +6,10 @@ describe('Realizar testes automatizados validando:entradas válidas e inválidas
     beforeEach(() => {
         
         cy.visit('/')
-        cy.InscribeBtn()
+        cy.InscribeBtn().typeWithoutError()
     });
     it('Realiza a validação na tela de Cadastro: Personal Data', () => {
-        validate.personal_data()
+        validate.personalData()
     });
     
     it('Realiza a validação na tela de Cadastro: Labels', () =>{
@@ -20,7 +20,22 @@ describe('Realizar testes automatizados validando:entradas válidas e inválidas
         validate.placeholder()
     });
 
+    it('Realiza a validação na tela de Cadastro: Checkbox and Buttons', () => {
+        validate.checkboxAndButtons()
+        
+    });
+
     it('Realiza a validação na tela de Cadastro: Head Icon Rodapé ', () => {
         validate.icon()
     });
+
+    it('Realiza a validação na tela de Cadastro: Mascara & Campos obrigatórios ', () => {
+        validate.requiredFields()
+    });
+
+    it('Realiza a validação na tela de Cadastro: Completa o cadastro com Sucesso!', () => {
+        validate.completeSignup()
+    });
+
+    // completeSignup
 });
