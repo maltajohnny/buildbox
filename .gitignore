@@ -4,4 +4,3 @@ cypress/videos/
 cypress/screenshots/
 cypress/downloads/
 cypress/fixtures/
-cypress.env.json
