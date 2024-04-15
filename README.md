@@ -22,6 +22,10 @@ A seguir, teremos informações importantes como:
 - Instalar todas as dependências necessárias
 - Rodar os testes (Chrome & CLI)
 
+- OBS: Neste teste subiram arquivos que não seriam versionados no dia a dia por contar dados sensíveis.
+  Essas informações seriam gravadas em secrets no próprio github ou AzureDevops. Sendo assim, o arquivo
+  cypress.env.json NÃO SERIA versionado.
+
 ```
 
 
