@@ -1,7 +1,7 @@
 Sejam Bem vindos ao Buildbox Job Interview Project 
 ==================
 <p align="center">
- <img src="https://i.postimg.cc/qMgbgRtd/buildbox-logo.png" alt=""  width="340" height="123" /> 
+ <img src="https://i.postimg.cc/sDwLFd5d/buildbox-it-solutions-logo.jpg" alt=""  width="300" height="300" /> 
 </p>
 
 O que será necessário ter:
