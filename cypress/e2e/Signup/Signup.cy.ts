@@ -36,6 +36,4 @@ describe('Realizar testes automatizados validando:entradas válidas e inválidas
     it('Realiza a validação na tela de Cadastro: Completa o cadastro com Sucesso!', () => {
         validate.completeSignup()
     });
-
-    // completeSignup
 });
