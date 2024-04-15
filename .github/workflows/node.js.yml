@@ -1,11 +1,6 @@
-name: Run E2E Tests on Pull Request
+name: Run E2E Tests
 
-on:
-  pull_request:
-    branches:
-      - dev
-    paths:
-      - '**/*.js' # Este é um exemplo, ajuste conforme necessário
+on: [pull_request]
 
 jobs:
   run-e2e-tests:
@@ -13,10 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check if PR is from dev to main
-        if: github.event.pull_request.base.ref == 'main' && github.event.pull_request.head.ref == 'dev'
-        run: echo "PR is from dev to main, continuing..."
-
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
