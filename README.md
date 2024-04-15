@@ -27,7 +27,11 @@ A seguir, teremos informações importantes como:
   cypress.env.json NÃO SERIA versionado.
 
 ```
-
+Github Actions
+==================
+<p align="center">
+ <img src="https://i.postimg.cc/XJDwcbh3/Captura-de-Tela-2024-04-15-a-s-04-10-03.png" alt=""  width="1280" height="720" /> 
+</p>
 
 
 Clonando o projeto
